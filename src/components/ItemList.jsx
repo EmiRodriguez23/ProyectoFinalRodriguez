@@ -3,7 +3,7 @@ import React from 'react';
 
 const ItemList = ({data =[]}) => {
     return(
-        data.map(katanas => <Item key={katanas.id} info={katanas} />)
+        data.map(games => <Item key={games.id} info={games} />)
     );
 }
 
