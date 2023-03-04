@@ -1,16 +1,15 @@
+import '../App.css';
+
 import React from 'react';
 import CartWidget from '../components/CartWidget';
 import {NavLink} from 'react-router-dom';
 
 export const NavBar = () => {
   return (
-    <div className="container">
-        <nav className="nav">
-            <div className="nav_brand">
+        <ul className="flex flex-row m-3 space-x-10 bg-gray-600 p-3">
+            <li>
                 <NavLink to='/' className="nav_link">Games</NavLink>
-            </div>
-        </nav>
-        <ul className="nav_list">
+            </li>
             <li>
                 <NavLink to='/categoria/accion' className="nav_link">Accion</NavLink>
             </li>
@@ -29,7 +28,6 @@ export const NavBar = () => {
                 </NavLink>
             </li>
         </ul>
-    </div>
   );
 }
 

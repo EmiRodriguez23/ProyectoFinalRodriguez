@@ -9,7 +9,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <>
+     <>
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/detalle/:detalleId' element={<ItemDetailContainer />} />
         </Routes>       
       </BrowserRouter>
-    </>
+    </> 
   );
 }
 
