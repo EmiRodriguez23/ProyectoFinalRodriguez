@@ -21,7 +21,7 @@ export const ItemDetail = ({data}) => {
                     <h1 className='text-3xl text-black'>{data.title}</h1>
                     {
                         goToCart
-                            ? <Link to='/cart'>Terminar compra</Link>
+                            ? <Link className='text-violet-700 text-2xl bg-black ' to='/cart'>Terminar compra</Link>
                             : <ItemCount  initial={0} stock={99} onAdd={onAdd} />
                     }
                 </div>
